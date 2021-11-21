@@ -1,0 +1,24 @@
+﻿  Carton.cpp
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(34,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(36,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(53,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(55,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(72,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(74,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(91,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(93,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(110,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(112,8): warning C4101: 'comp': variable local sin referencia
+  Jugador.cpp
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(34,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(36,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(53,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(55,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(72,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(74,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(91,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(93,8): warning C4101: 'comp': variable local sin referencia
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(110,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(112,8): warning C4101: 'comp': variable local sin referencia
+  Generando código...
+  Bingo.vcxproj -> F:\CURSOS\Paradigmas de Programación\Exámen II Paradigmas GS\Bingo\Debug\Bingo.exe
