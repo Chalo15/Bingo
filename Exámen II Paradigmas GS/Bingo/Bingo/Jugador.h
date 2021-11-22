@@ -21,6 +21,9 @@ public:
 	~Jugador() {
 
 	}
+	Carton getcBingo() {
+		return cBingo;
+	}
 
 	//create players
 	void requestName() {
@@ -29,7 +32,7 @@ public:
 		getline(cin, name);
 		win = false; 
 		cout << endl;
-
+		cBingo.llenaCarton();
 	}
 };
 

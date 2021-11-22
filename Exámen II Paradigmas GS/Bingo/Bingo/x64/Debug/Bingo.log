@@ -1,0 +1,10 @@
+﻿  Bingo.cpp
+D:\xampp\htdocs\Bingo\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(23,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Carton.cpp
+D:\xampp\htdocs\Bingo\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(23,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  GUI.cpp
+D:\xampp\htdocs\Bingo\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(23,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Jugador.cpp
+D:\xampp\htdocs\Bingo\Exámen II Paradigmas GS\Bingo\Bingo\Carton.h(23,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generando código...
+  Bingo.vcxproj -> D:\xampp\htdocs\Bingo\Exámen II Paradigmas GS\Bingo\x64\Debug\Bingo.exe
