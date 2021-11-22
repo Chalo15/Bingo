@@ -13,6 +13,7 @@ private:
 	string coloum1[5], coloum2[5], coloum3[5], coloum4[5], coloum5[5];
 	int col[5]; //para crear los numeros aleatorios de cada columna
 	int num = 0;
+	bool comp = false;
 
 
 public:
@@ -33,9 +34,9 @@ public:
 
 	//Creación del cartón
 	void randomC1(int i) {
-		bool comp = false;
 		if (i < 5) {
-			genera:
+		genera:
+			num = 0;
 			num = rand() % (15 - 1 + 1) + 1;
 			comp = comprueba(0, num);
 			if (comp == true) {
@@ -56,9 +57,9 @@ public:
 		}
 	}
 	void randomC2(int i) {
-		bool comp = false;
 		if (i < 5) {
 		genera:
+			num = 0;
 			num = rand() % (30 - 16 + 1) + 16;
 			comp = comprueba(0, num);
 			if (comp == true) {
@@ -79,9 +80,9 @@ public:
 		}
 	}
 	void randomC3(int i) {
-		bool comp = false;
 		if (i < 5) {
 		genera:
+			num = 0;
 			num = rand() % (45 - 31 + 1) + 31;
 			comp = comprueba(0, num);
 			if (comp == true) {
@@ -102,9 +103,9 @@ public:
 		}
 	}
 	void randomC4(int i) {
-		bool comp = false;
 		if (i < 5) {
 		genera:
+			num = 0;
 			num = rand() % (60 - 46 + 1) + 46;
 			comp = comprueba(0, num);
 			if (comp == true) {
@@ -125,9 +126,9 @@ public:
 		}
 	}
 	void randomC5(int i) {
-		bool comp = false;
 		if (i < 5) {
 		genera:
+			num = 0;
 			num = rand() % (75 - 61 + 1) + 61;
 			comp = comprueba(0, num);
 			if (comp == true) {
@@ -149,19 +150,22 @@ public:
 	}
 
 	bool comprueba(int i, int num) {
-		if (col[i] == num) {
-			return true;
+		bool prueba = false;
+		if (i < 5) {
+			if (col[i] == num) {
+				return true;
+			}
+			else {
+				i++;
+				prueba = comprueba(i, num);
+			}
 		}
-		else {
-			i++;
-			comprueba(i, num);
-		}
-		return false;
+		return prueba;
 	}
 
 	void printfTittle(int i) {
 		if (i < 5) {
-			cout << " " << tittle[i] << " ";
+			cout << "	" << tittle[i] << " ";
 			i++;
 			printfTittle(i);
 		}
@@ -171,7 +175,7 @@ public:
 	}
 	void printfColoums(int i) {
 		if (i < 5) {
-			cout << " " << coloum1[i] << " " << coloum2[i] << " " << coloum3[i] << " " << coloum4[i] << " " << coloum5[i] << " " << endl;
+			cout << "\t" << coloum1[i] << "\t" << coloum2[i] << "\t" << coloum3[i] << "\t" << coloum4[i] << "\t" << coloum5[i] << "\t" << endl<<endl;
 			i++;
 			printfColoums(i);
 		}
@@ -192,7 +196,7 @@ public:
 	void muestraCarton() {
 		cout << endl;
 		printfTittle(0);
-		cout << endl;
+		cout << endl<<endl;
 		printfColoums(0);
 	}
 
