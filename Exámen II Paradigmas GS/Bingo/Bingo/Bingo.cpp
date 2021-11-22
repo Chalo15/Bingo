@@ -7,7 +7,6 @@ int main()
 {
 	GUI gui;
 	gui.game();
-
 	return 0;
 }
 
