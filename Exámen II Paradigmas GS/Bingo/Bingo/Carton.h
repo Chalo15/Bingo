@@ -184,6 +184,100 @@ public:
 		}
 	}
 
+	void modifica(int n) {
+		int i = 0;
+		string dat = "";
+		stringstream x;
+		x << n;
+		dat = x.str();
+		if (n <= 15) {
+		verifica1:
+			if (i < 5) {
+
+
+				if (dat == coloum1[i]) {
+					coloum1[i] = "X";
+					return;
+				}
+				else {
+					i++;
+					goto verifica1;
+				}
+			}
+			else {
+				return;
+			}
+		}
+		if (n >=16 || n<=30) {
+		verifica2:
+			
+			if (i < 5) {
+				if (dat == coloum2[i]) {
+					coloum2[i] = "X";
+					return;
+				}
+				else {
+					i++;
+					goto verifica2;
+				}
+			}
+			else {
+				return;
+			}
+		}
+		if (n>=31 || n<=45) {
+		verifica3:
+			
+			if (i < 5) {
+				if (dat == coloum3[i]) {
+					coloum3[i] = "X";
+					return;
+				}
+				else {
+					i++;
+					goto verifica3;
+				}
+			}
+			else { 
+				return; 
+			}
+		}
+		if (n>=46 || n<=60) {
+		verifica4:
+			
+			if (i < 5) {
+				if (dat == coloum4[i]) {
+					coloum4[i] = "X";
+					return;
+				}
+				else {
+					i++;
+					goto verifica4;
+				}
+			}
+			else {
+				return;
+			}
+		}
+		if (n>=61 || n<=75) {
+		verifica5:
+			
+			if (i < 5) {
+				if (dat == coloum5[i]) {
+					coloum5[i] = "X";
+					return;
+				}
+				else {
+					i++;
+					goto verifica5;
+				}
+			}
+			else {
+				return;
+			}
+		}
+	}
+
 	//methods
 	void llenaCarton() {
 		randomC1(0); //0 es el parámetro inicial de la recursividad

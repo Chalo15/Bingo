@@ -15,6 +15,35 @@ void GUI::game()
 	cin >> cc;
 	registraJugadores(0, cc);
 	cout << endl;
-	ply.getcBingo().muestraCarton();
+	//mostrar ambos cartones asignados
 
+	//ply.getcBingo().muestraCarton();
+	randomNumber(0);
+	bool estado = false;
+	int itera = 0;
+	player = players.begin();
+	while (!estado) {
+		cout << "Número obtenido: " << numeros[itera]<<endl;
+		
+		//mostrar ambos cartones con las posibles variaciones 
+		player->getcBingo().modifica(numeros[itera]);
+		player++->getcBingo().modifica(numeros[itera]);
+
+		player->getcBingo().muestraCarton();
+		player++->getcBingo().muestraCarton();
+
+		//vierifica si hay ganador
+		if (player->getGane()) {
+			cout << "Felicidades, el jugador " << player->getNombre() << " ha sido el ganador" << endl;
+			estado = true;
+		}
+		else if (player++->getGane()) {
+			cout << "Felicidades, el jugador " << player++->getNombre() << " ha sido el ganador" << endl;
+			estado = true;
+		}
+
+
+		itera++;
+
+	}
 }
