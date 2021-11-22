@@ -225,5 +225,153 @@ public:
 		}
 		return false;
 	}
+	bool compruebaHorizontal1() {
+		if (coloum1[0] == "X") {
+			if (coloum2[0] == "X") {
+				if (coloum3[0] == "X") {
+					if (coloum4[0] == "X") {
+						if (coloum5[0] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaHorizontal2() {
+		if (coloum1[1] == "X") {
+			if (coloum2[1] == "X") {
+				if (coloum3[1] == "X") {
+					if (coloum4[1] == "X") {
+						if (coloum5[1] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaHorizontal3() {
+		if (coloum1[2] == "X") {
+			if (coloum2[2] == "X") {
+				if (coloum3[2] == "X") {
+					if (coloum4[2] == "X") {
+						if (coloum5[2] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaHorizontal4() {
+		if (coloum1[3] == "X") {
+			if (coloum2[3] == "X") {
+				if (coloum3[3] == "X") {
+					if (coloum4[3] == "X") {
+						if (coloum5[3] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaHorizontal5() {
+		if (coloum1[4] == "X") {
+			if (coloum2[4] == "X") {
+				if (coloum3[4] == "X") {
+					if (coloum4[4] == "X") {
+						if (coloum5[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaVertical1() {
+		if (coloum1[0] == "X") {
+			if (coloum1[1] == "X") {
+				if (coloum1[2] == "X") {
+					if (coloum1[3] == "X") {
+						if (coloum1[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaVertical2() {
+		if (coloum2[0] == "X") {
+			if (coloum2[1] == "X") {
+				if (coloum2[2] == "X") {
+					if (coloum2[3] == "X") {
+						if (coloum2[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaVertical3() {
+		if (coloum3[0] == "X") {
+			if (coloum3[1] == "X") {
+				if (coloum3[2] == "X") {
+					if (coloum3[3] == "X") {
+						if (coloum3[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaVertical4() {
+		if (coloum4[0] == "X") {
+			if (coloum4[1] == "X") {
+				if (coloum4[2] == "X") {
+					if (coloum4[3] == "X") {
+						if (coloum4[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaVertical5() {
+		if (coloum5[0] == "X") {
+			if (coloum5[1] == "X") {
+				if (coloum5[2] == "X") {
+					if (coloum5[3] == "X") {
+						if (coloum5[4] == "X") {
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	bool compruebaEsquinas() {
+		if (coloum1[0] == "X" && coloum1[4] == "X") {
+			if (coloum5[0] == "X" && coloum5[4] == "X") {
+				return true;
+			}
+		}
+		return false;
+	}
 };
 

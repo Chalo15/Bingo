@@ -15,6 +15,6 @@ void GUI::game()
 	cin >> cc;
 	registraJugadores(0, cc);
 	cout << endl;
-	ply.getcBingo().muestraCarton();
+	
 
 }
