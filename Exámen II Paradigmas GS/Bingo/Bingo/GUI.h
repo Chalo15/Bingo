@@ -52,7 +52,7 @@ public:
 		}
 	}
 	void randomNumber(int i) {
-		if (i < 5) {
+		if (i < 75) {
 			bool compr = false;
 		genera:
 			num = rand() % (75 - 1 + 1) + 1;
