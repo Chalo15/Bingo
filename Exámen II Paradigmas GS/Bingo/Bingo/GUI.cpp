@@ -11,39 +11,40 @@ void GUI::game()
 	cout << "		- Diagonal de derecha a izquierda" << endl;
 	cout << "		- Linea recta horizontal o vertical" << endl;
 	cout << endl << endl << endl;
-	cout << "Ingrese la cantidad de jugadores:" << endl;
-	cin >> cc;
-	registraJugadores(0, cc);
+	cout << "Ingrese los nombres de los jugadores:" << endl;
+	registraJugadores();
 	cout << endl;
-	//mostrar ambos cartones asignados
 
 	//ply.getcBingo().muestraCarton();
-	randomNumber(0);
+
 	bool estado = false;
 	int itera = 0;
 	player = players.begin();
 	while (!estado) {
+		cout << "Girando la tombola..." << endl;
+		delay(1);
 		cout << "Número obtenido: " << numeros[itera]<<endl;
 		
 		//mostrar ambos cartones con las posibles variaciones 
-		player->getcBingo().modifica(numeros[itera]);
-		player++->getcBingo().modifica(numeros[itera]);
-
-		player->getcBingo().muestraCarton();
-		player++->getcBingo().muestraCarton();
+		cout << "Analizando el carton de " << ply.getNombre() <<"..." << endl;
+		//delay(1.5);
+		ply.getcBingo()->modifica(numeros[itera]);
+		ply.getcBingo()->muestraCarton();
+		cout << endl;
+		cout << "Analizando el carton de " << ply2.getNombre() << "..." << endl;
+		//delay(1.5);
+		ply2.getcBingo()->modifica(numeros[itera]);
+		ply2.getcBingo()->muestraCarton();
 
 		//vierifica si hay ganador
-		if (player->getGane()) {
-			cout << "Felicidades, el jugador " << player->getNombre() << " ha sido el ganador" << endl;
+		if (ply.getGane()) {
+			cout << "Felicidades, el jugador " << ply.getNombre() << " ha sido el ganador" << endl;
 			estado = true;
 		}
-		else if (player++->getGane()) {
-			cout << "Felicidades, el jugador " << player++->getNombre() << " ha sido el ganador" << endl;
+		else if (ply2.getGane()) {
+			cout << "Felicidades, el jugador " << ply2.getNombre() << " ha sido el ganador" << endl;
 			estado = true;
 		}
-
-
 		itera++;
-
 	}
 }

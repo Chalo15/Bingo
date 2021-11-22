@@ -193,9 +193,7 @@ public:
 		if (n <= 15) {
 		verifica1:
 			if (i < 5) {
-
-
-				if (dat == coloum1[i]) {
+				if (coloum1[i] == dat) {
 					coloum1[i] = "X";
 					return;
 				}
@@ -208,7 +206,9 @@ public:
 				return;
 			}
 		}
-		if (n >=16 || n<=30) {
+
+		i = 0;
+		if (n >= 16 && n <= 30) {
 		verifica2:
 			
 			if (i < 5) {
@@ -225,7 +225,9 @@ public:
 				return;
 			}
 		}
-		if (n>=31 || n<=45) {
+
+		i = 0;
+		if (n >= 31 && n <= 45) {
 		verifica3:
 			
 			if (i < 5) {
@@ -242,7 +244,9 @@ public:
 				return; 
 			}
 		}
-		if (n>=46 || n<=60) {
+
+		i = 0;
+		if (n >= 46 && n <= 60) {
 		verifica4:
 			
 			if (i < 5) {
@@ -259,7 +263,9 @@ public:
 				return;
 			}
 		}
-		if (n>=61 || n<=75) {
+
+		i = 0;
+		if (n >= 61 && n <= 75){
 		verifica5:
 			
 			if (i < 5) {
